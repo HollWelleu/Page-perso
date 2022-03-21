@@ -1,0 +1,360 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+
+
+/*Page d'accueil*/
+
+.acceuil {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ANIMATION RGB*/
+.conteneur::before, .conteneur::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: 1510px;
+    height: 760px;
+    z-index: -1;
+    animation: animate 60s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.conteneur::after {
+	filter: blur(20px);
+}
+
+
+/*FIN ANIMATION RGB*/
+
+
+.acceuil h1 {
+    font-size: 50px;
+    margin-bottom: 800px;
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------ANNEE DE PREMIERE------------------------------------------------*/
+
+.premiere h3 {
+
+    font-weight: 80;
+
+}
+
+/*--------1ER BOUTON-------*/
+.btn {
+    position: absolute;
+    cursor: pointer;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    width: 100%;
+    text-align: center;
+}
+
+/*--------2EME BOUTON--------*/
+
+.btn-1 {
+    position: absolute;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    width: 100%;
+    text-align: left;
+    left: -20px;
+}
+/*--------3EME BOUTON--------*/
+
+.btn-2 {
+    position: absolute;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 200px;
+    left: -20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    width: 100%;
+}
+
+
+/*ANIMATION BOUTONS*/
+svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+
+.btn:hover {
+  background: rgba($black, 0);
+  font-weight: 900;
+
+}
+
+.btn:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+/*FIN ANIMATION BOUTON*/
+
+
+
+.orange {
+    width: 5.6em;
+    height: 5.6em;
+    border-radius: 50%;
+    background-color: #ffb526;
+    box-shadow: inset 0.2em -.2em  #cc8a0c;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 280px;
+    bottom: 50px;
+  }
+  
+  .orange:before {
+    content: "";
+    position: absolute;
+    top: -1em;
+    left: 3em;
+    height: 0;
+    width: 0;
+    border: 1em solid #539e3d;
+    border-radius: 50% 0 50% 0;
+    border-bottom-color: #437512;
+    border-right-color: #437512;
+  }
+
+
+/*-----------------------------------------------------------------------------FIN ANNEE DE PREMIERE------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------ANNEE DE TERMINALE------------------------------------------------*/
+
+.terminale h3 {
+
+    font-weight: 80;
+
+}
+
+
+/*BOUTON 1*/
+
+.bouton1 {
+    position: absolute;
+    cursor: pointer;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    width: 100%;
+    text-align: center;
+    justify-content: left;
+    margin-top: 125px;
+    left: 810px;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bouton1:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+  }
+
+.bot2 {
+    position: absolute;
+    margin: 20px;
+    margin-top: 220px;
+}
+
+.bot3 {
+    position: absolute;
+    margin: 20px;
+    margin-top: 320px;
+}
+
+.peach  {
+    width:6em;
+    height:5em;
+    background-color:  #fca049;
+    box-shadow: inset 0.2em -0.2em #c9803a;
+    border-radius: 2.5em 2.5em 3em 3em;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 110px;
+  }
+ 
+  .peach:before {
+    content: "";
+    position: absolute;
+    top: -1.7em;
+    left: 3em;
+    height: 0;
+    width: 0;
+    border: 1em solid #539e3d;
+    border-radius: 50% 0 50% 0;
+    border-bottom-color: #437512;
+    border-right-color: #437512;
+  }
+
+/*-----------------------------------------------------------------------------FIN ANNEE DE TERMINALE--------------------------------------------*/
+.conteneur {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 1500px;
+    height: 750px;  
+    margin-top: 100px;
+    background: rgb(46, 46, 46);
+}
+
+.conteneur h3 {
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    margin: 0px;
+    text-align: center;
+    height: 100px;
+}
+
+.premiere {
+    width: 700px;
+    height: 650px;
+    border: solid white 2px;
+    margin: 50px;
+    position: relative;
+}
+
+.terminale {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 650px;
+    border: solid white 2px;
+    margin: 50px;
+}
+
+
+
+
+/*Barre de chargement*/
+
+.chargement {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.barre {
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background-color: lightblue;
+}
+
+.barre2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 500px;
+    height: 10px;
+    animation: 2s linear 1s slidein;
+}
+
+@keyframes slidein {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    z-index: -1;
+}
+
+.chargement h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+/*Fin de la barre de chargement*/
+
+
+
